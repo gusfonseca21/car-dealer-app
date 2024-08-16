@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import NavigateButton from "@/components/NavigateButton";
-import SelectCar from "@/components/SelectCar";
-import SelectMenu from "@/components/SelectMenu";
-import { Car } from "@/types";
-import { useState } from "react";
+import NavigateButton from '@/components/NavigateButton';
+import SelectCar from '@/components/SelectCar';
+import SelectMenu from '@/components/SelectMenu';
+import { Car } from '@/types';
+import { useState } from 'react';
 
-export const carModelYears = [
+const carModelYears = [
   2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015,
 ];
 
