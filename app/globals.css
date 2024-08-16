@@ -16,6 +16,14 @@
   }
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.tff") format("tff"),
+    url("/fonts/Montserrat-Italic-VariableFont_wght.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

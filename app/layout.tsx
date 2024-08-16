@@ -15,8 +15,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <main className="flex h-screen flex-col items-center justify-between p-12">
+          <div className="w-full h-screen relative flex">
+            <div className="w-full h-full opacity-30">
+              <div className="w-full h-full flex justify-center items-center bg-[url('/images/main-background.jpg')] bg-cover bg-center"></div>
+            </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-5">
+              {children}
+            </div>
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
